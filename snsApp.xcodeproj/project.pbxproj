@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		981E1ECC1334130D4ACA269E /* Pods_snsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 232BFAF7FF167A8E0C88EBEB /* Pods_snsApp.framework */; };
 		F4BBA39B21FF2BC200B448FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BBA39A21FF2BC200B448FE /* AppDelegate.swift */; };
 		F4BBA39D21FF2BC200B448FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BBA39C21FF2BC200B448FE /* ViewController.swift */; };
 		F4BBA3A021FF2BC200B448FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4BBA39E21FF2BC200B448FE /* Main.storyboard */; };
 		F4BBA3A221FF2BC300B448FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4BBA3A121FF2BC300B448FE /* Assets.xcassets */; };
 		F4BBA3A521FF2BC300B448FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4BBA3A321FF2BC300B448FE /* LaunchScreen.storyboard */; };
+		F4E482A62205828500013552 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E482A52205828500013552 /* InputViewController.swift */; };
+		F4E482A82205886500013552 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E482A72205886500013552 /* Content.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03789BE14A5A00DB2B23EA73 /* Pods-snsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-snsApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-snsApp/Pods-snsApp.release.xcconfig"; sourceTree = "<group>"; };
+		232BFAF7FF167A8E0C88EBEB /* Pods_snsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_snsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB857A4C984610D84F045A15 /* Pods-snsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-snsApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-snsApp/Pods-snsApp.debug.xcconfig"; sourceTree = "<group>"; };
 		F4BBA39721FF2BC200B448FE /* snsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = snsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4BBA39A21FF2BC200B448FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4BBA39C21FF2BC200B448FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,8 @@
 		F4BBA3A121FF2BC300B448FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4BBA3A421FF2BC300B448FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4BBA3A621FF2BC300B448FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4E482A52205828500013552 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		F4E482A72205886500013552 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				981E1ECC1334130D4ACA269E /* Pods_snsApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		954231FDBBA6E6F7A88878F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				232BFAF7FF167A8E0C88EBEB /* Pods_snsApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D96D2F2F7176493E708D8A88 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB857A4C984610D84F045A15 /* Pods-snsApp.debug.xcconfig */,
+				03789BE14A5A00DB2B23EA73 /* Pods-snsApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F4BBA38E21FF2BC200B448FE = {
 			isa = PBXGroup;
 			children = (
 				F4BBA39921FF2BC200B448FE /* snsApp */,
 				F4BBA39821FF2BC200B448FE /* Products */,
+				D96D2F2F7176493E708D8A88 /* Pods */,
+				954231FDBBA6E6F7A88878F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +88,8 @@
 				F4BBA3A121FF2BC300B448FE /* Assets.xcassets */,
 				F4BBA3A321FF2BC300B448FE /* LaunchScreen.storyboard */,
 				F4BBA3A621FF2BC300B448FE /* Info.plist */,
+				F4E482A52205828500013552 /* InputViewController.swift */,
+				F4E482A72205886500013552 /* Content.swift */,
 			);
 			path = snsApp;
 			sourceTree = "<group>";
@@ -71,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4BBA3A921FF2BC300B448FE /* Build configuration list for PBXNativeTarget "snsApp" */;
 			buildPhases = (
+				8052E6A3F115D0C265FD4D0C /* [CP] Check Pods Manifest.lock */,
 				F4BBA39321FF2BC200B448FE /* Sources */,
 				F4BBA39421FF2BC200B448FE /* Frameworks */,
 				F4BBA39521FF2BC200B448FE /* Resources */,
+				29496C96C24147C3B283AD53 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +162,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		29496C96C24147C3B283AD53 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-snsApp/Pods-snsApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-snsApp/Pods-snsApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8052E6A3F115D0C265FD4D0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-snsApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F4BBA39321FF2BC200B448FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4E482A62205828500013552 /* InputViewController.swift in Sources */,
 				F4BBA39D21FF2BC200B448FE /* ViewController.swift in Sources */,
 				F4BBA39B21FF2BC200B448FE /* AppDelegate.swift in Sources */,
+				F4E482A82205886500013552 /* Content.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +367,7 @@
 		};
 		F4BBA3AA21FF2BC300B448FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB857A4C984610D84F045A15 /* Pods-snsApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +386,7 @@
 		};
 		F4BBA3AB21FF2BC300B448FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03789BE14A5A00DB2B23EA73 /* Pods-snsApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
